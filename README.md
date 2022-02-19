@@ -1,6 +1,8 @@
 # IAmCS Website
 
-To run this website locally...
+**Figma:** [Design Link](https://www.figma.com/file/45lxqmcs3FT3Bpw5On3qAL/%23IAMCS-2022?node-id=0%3A1)
+
+**To run this website locally...**
 1. [Install](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) `git` if your computer doesn't already have it. 
 2. Clone this repo onto your computer: `git clone https://github.com/ganning127/IAmCS-Website.git`.
 3. `cd` into the location where you cloned this repo.
