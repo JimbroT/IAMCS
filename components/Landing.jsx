@@ -71,7 +71,7 @@ export function Landing() {
                         <Button
                             color='#494949'
                             as='a'
-                            href='/TODO'
+                            href='https://docs.google.com/forms/d/e/1FAIpQLSfur45aXKYR5ubchmDXInsXr9eTPwyl9z06mndVwSOoNlVE5w/formResponse'
                             bg={'#F1C232'}
                             rounded={'full'}
                             px={6}
