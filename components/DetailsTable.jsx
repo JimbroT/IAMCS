@@ -22,7 +22,7 @@ export const DetailsTable = () => {
                         <Tr alignItems='center'>
                             <Td p={0}>
                                 <Text color='#F1C232' fontSize='3xl' fontWeight='bold'>
-                                    When:
+                                    Where:
                                 </Text>
 
                             </Td>
