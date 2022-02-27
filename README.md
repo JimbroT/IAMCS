@@ -1,5 +1,9 @@
 # IAmCS Website
 
+<img width="1860" alt="Screen Shot 2022-02-22 at 7 41 02 PM" src="https://user-images.githubusercontent.com/62436772/155243942-25c38935-9c70-4b1f-95d3-e57d27f9287a.png">
+
+
+
 **Figma:** [Design Link](https://www.figma.com/file/45lxqmcs3FT3Bpw5On3qAL/%23IAMCS-2022?node-id=0%3A1)
 
 **To run this website locally...**
