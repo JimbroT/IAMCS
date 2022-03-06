@@ -3,7 +3,16 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Landing } from '../components/Landing'
 import { DetailsTable } from '../components/DetailsTable'
-import { Box, SimpleGrid, Heading, Text, Img, Container } from '@chakra-ui/react'
+import {
+  Box, SimpleGrid, Heading, Modal, useDisclosure, Button,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter, Lorem,
+  ModalBody,
+  ModalCloseButton, Container
+} from '@chakra-ui/react'
+import { SignUpModal } from '../components/SignUpModal'
 import { NavBar } from '../components/NavBar'
 import { TwoColWithPic } from '../components/TwoColWithPic'
 import { MedSep } from '../components/MedSep'
@@ -17,13 +26,14 @@ export default function Home() {
         <meta property="og:description" content="Sign up for the #IAmCS Summit!" />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
-
       </Head>
       <NavBar bg='#3B005A' />
       <Landing />
+      <SignUpModal />
       <Box bgPos='center' bgRepeat='repeat' minH='40vh'
         bgImage="linear-gradient(to top, rgba(0, 0, 0, 0.5), rgb(23, 0, 35)), url('/iamcs_bkg.png') "
       >
+
         <Container maxW='container.xl' p={8}>
 
           <Box pt={16}>
@@ -53,12 +63,9 @@ export default function Home() {
             />
 
             <SmSep />
-
-
-
-
           </Box>
         </Container>
+
       </Box>
 
     </>
