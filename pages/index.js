@@ -46,9 +46,9 @@ export default function Home() {
             <SmSep />
 
             <TwoColWithPic
-              img='/VEX Robot Poster.png'
-              title='VEX-ing into the Robo World'
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry' s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+              img='/CODE_School Poster.png'
+              title='Finding the Spark in Code: Introduction to Web Development'
+              desc="In this workshop, you will be introduced to the basics of web development! Including, understtanding how websites work and how HTML and CSS can be implemented easily. Then participants will desing/create their own website."
               align='right'
             />
 
