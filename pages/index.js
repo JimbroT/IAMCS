@@ -55,6 +55,12 @@ export default function Home() {
             <SmSep />
             
             <TwoColWithPic
+              img='/VEX Robot Poster.png'
+              title='The Magic of Science and Behind The Scenes'
+              desc="Have you ever been curious about the magic behind movie and television sets? Have you ever wondered how the lore behind your favorite science fiction and fantasy shows and movies would be possible in today's world? In The Magic and Science Beyond The Set, we explore the possibilities, intricacies, and science in telivision sets and movies, as well as how through bioengineering, some of our favorite heroes have become the heroes we see on set."
+              align='left'
+            />            
+            <TwoColWithPic
               img='/PH_ Summit Poster.png'
               title='Making The Rainbow: Learning About PH'
               desc="Ever wonder why lemon tastes so sour? What about vinegar? Why does soap feel so slippery? In this workshop, we're going to be exploring why this is by magically changing the color of cabbage juice using substances with different pH. Students will perform a lab, talk through a discussion, and then do a fun art project!"
