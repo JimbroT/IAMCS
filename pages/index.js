@@ -56,13 +56,34 @@ export default function Home() {
             <SmSep />
 
             <TwoColWithPic
-              img='/VEX Robot Poster.png'
-              title='VEX-ing into the Robo World'
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry' s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+              img='/CODE_ School Poster.png'
+              title='Finding the Spark in Code: Introduction to Web Development'
+              desc="In this workshop, you will be introduced to the basics of web development! Including, understtanding how websites work and how HTML and CSS can be implemented easily. Then participants will desing/create their own website."
               align='right'
             />
 
             <SmSep />
+
+            <TwoColWithPic
+              img='/VEX Robot Poster.png'
+              title='The Magic of Science and Behind The Scenes'
+              desc="Have you ever been curious about the magic behind movie and television sets? Have you ever wondered how the lore behind your favorite science fiction and fantasy shows and movies would be possible in today's world? In The Magic and Science Beyond The Set, we explore the possibilities, intricacies, and science in telivision sets and movies, as well as how through bioengineering, some of our favorite heroes have become the heroes we see on set."
+              align='left'
+            />
+
+            <SmSep />
+            <TwoColWithPic
+              img='/PH_ Summit Poster.png'
+              title='Making The Rainbow: Learning About PH'
+              desc="Ever wonder why lemon tastes so sour? What about vinegar? Why does soap feel so slippery? In this workshop, we're going to be exploring why this is by magically changing the color of cabbage juice using substances with different pH. Students will perform a lab, talk through a discussion, and then do a fun art project!"
+              align='right'
+            />
+
+            <SmSep />
+
+
+
+
           </Box>
         </Container>
 
@@ -71,3 +92,12 @@ export default function Home() {
     </>
   )
 }
+
+/*
+  landing (including summit details,
+  about iamcs campaign,
+  workshops,
+  meet the team,
+  sponsors,
+  footer (including social media links,)
+*/
