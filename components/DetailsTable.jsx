@@ -66,7 +66,7 @@ export const DetailsTable = () => {
             </Box>
 
             <Box>
-                <Img src='/sie.png' mx='auto' maxH='500px' />
+                <Img src='/sie.png' mx='auto' maxH='600px' />
             </Box>
 
         </SimpleGrid>
