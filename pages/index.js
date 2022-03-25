@@ -34,13 +34,24 @@ export default function Home() {
 
             <SmSep />
 
-            <Box textAlign="center" maxW="700px" mx="auto">
+            <Box textAlign="center" maxW="900px" mx="auto">
               <Heading as="h1" size="3xl" color="white" fontWeight="bold">About #IAmCS</Heading>
 
-              <Text fontSize="xl" color="white" mt='40px'>
-                #IAmCS is a community-driven initiative to bring together the best minds in the CS community to share ideas, learn from each other, and build a community of like-minded individuals.
-              </Text>
-            </Box >
+              <Box fontSize="xl" color="white" mt='40px'>
+                <Text>
+                  #IAmCS is a campaign founded by the NC Computer Science Initiative in 2019. It aims to move the needle on equity-focused strategies to strengthen the North Carolina Computer Science landscape for all students. This summit is designed to do just that!. Our annual student-led Computer Science Summit is for all North Carolina students interested or involved in STEM and Computer Science.
+                </Text>
+
+                <Text mt='2'>
+                  The summit is a great opportunity for elementary, middle, and high school students across North Carolina to not only connect with other students interested in these areas but an opportunity for them to be uplifted and inspired to break down barriers that hinder us from pursuing the endless possibilities that lie within STEM and Computer Science. With this in mind, this year’s theme is “Building Blocks: Bit by bit we can program future change.”
+                </Text>
+
+                <Text mt='2'>
+                  Our summit is spearheaded by a phenomenal group of passionate Student Leaders who have an immense passion for STEM, leadership, and youth empowerment. They work hard behind the scenes to prepare for this in-person event and we are elated that the summit will feature student workshop facilitators and speakers all around the topics of STEM and Computer Science.
+                </Text>
+
+              </Box>
+            </Box>
 
             <MedSep />
             <Box textAlign="center" maxW="700px" mx="auto">
