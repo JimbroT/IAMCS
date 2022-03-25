@@ -3,35 +3,35 @@ import { GoogleSpreadsheet } from 'google-spreadsheet';
 
 export default async function handler(req, res) {
     const toEmail = req.body.email;
-    const fromEmail = '"IAmCS Summit Team <IAmCSNC@gmail.com>';
-    const text = `
-        Hello!
-        <br />
-        <br />
-        Thank you for subscribing to the #IAmCS Summit! We will be sending you an email with the details of the summit soon.
-        <br />
-        <br />
-        Sincerely,
-        <br />
-        #IAmCS Team
-    `;
+    // const fromEmail = '"IAmCS Summit Team <IAmCSNC@gmail.com>';
+    // const text = `
+    //     Hello!
+    //     <br />
+    //     <br />
+    //     Thank you for subscribing to the #IAmCS Summit! We will be sending you an email with the details of the summit soon.
+    //     <br />
+    //     <br />
+    //     Sincerely,
+    //     <br />
+    //     #IAmCS Team
+    // `;
 
-    // create reusable transporter object using the default SMTP transport
-    let transporter = nodemailer.createTransport({
-        service: 'Gmail',
-        auth: {
-            user: process.env.EMAIL,
-            pass: process.env.EMAIL_PASS
-        }
-    });
+    // // create reusable transporter object using the default SMTP transport
+    // let transporter = nodemailer.createTransport({
+    //     service: 'Gmail',
+    //     auth: {
+    //         user: process.env.EMAIL,
+    //         pass: process.env.EMAIL_PASS
+    //     }
+    // });
 
-    // send mail with defined transport object
-    let info = await transporter.sendMail({
-        from: fromEmail, // sender address
-        to: toEmail, // list of receivers
-        subject: "Thanks for signing up for Verste!", // Subject line
-        html: text // html body
-    });
+    // // send mail with defined transport object
+    // let info = await transporter.sendMail({
+    //     from: fromEmail, // sender address
+    //     to: toEmail, // list of receivers
+    //     subject: "Thanks for signing up for Verste!", // Subject line
+    //     html: text // html body
+    // });
 
 
     const doc = new GoogleSpreadsheet('11JaWSnUXRrKh0AhMmbBRhJqf4mWHhGMn8r4eyz4eaFo');
@@ -55,14 +55,7 @@ export default async function handler(req, res) {
 
 
 
-    if (info.accepted.length > 0) {
-        res.status(200).json({
-            accepted: true
-        });
-    }
-    else {
-        res.status(200).json({
-            accepted: false
-        });
-    }
+    res.status(200).json({
+        accepted: true
+    });
 }

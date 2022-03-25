@@ -4,6 +4,7 @@ import {
     ModalContent,
     ModalHeader,
     ModalFooter,
+    Spinner,
     ModalBody,
     ModalCloseButton,
     Button,
@@ -16,9 +17,9 @@ import {
 import { useState, useEffect } from 'react'
 export const SignUpModal = () => {
     // const { isOpen, onOpen, onClose } = useDisclosure()
-
-
     const [showModal, setShowModal] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [submitted, setSubmitted] = useState(false);
 
     useEffect(() => {
         setTimeout(() => setShowModal(true), 1000);
@@ -26,9 +27,10 @@ export const SignUpModal = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
         let email = document.getElementById('email').value;
 
-        await fetch('/api/subscribe', {
+        const resp = await fetch('/api/subscribe', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -38,6 +40,12 @@ export const SignUpModal = () => {
             })
         })
 
+        const data = await resp.json();
+
+        if (data.accepted) {
+            setSubmitted(true);
+        }
+        setLoading(false);
     }
 
     return (
@@ -51,18 +59,35 @@ export const SignUpModal = () => {
                         </Text>
                     </ModalHeader>
                     <ModalCloseButton />
-                    <ModalBody>
-                        <FormControl isRequired>
-                            <Input id='email' placeholder='e.g. example@example.com' />
-                            <FormHelperText ml='1'>We promise its an email worth reading.</FormHelperText>
-                        </FormControl>
-                    </ModalBody>
+                    {!submitted && (<>
+                        <ModalBody>
+                            <FormControl isRequired>
+                                <Input id='email' placeholder='e.g. example@example.com' />
+                                <FormHelperText ml='1'>We promise its an email worth reading.</FormHelperText>
+                            </FormControl>
+                        </ModalBody>
 
-                    <ModalFooter justifyContent='start'>
-                        <Button colorScheme='blue' mr={3} fontSize='md' onClick={handleSubmit}>
-                            Subscribe
-                        </Button>
-                    </ModalFooter>
+                        <ModalFooter justifyContent='start'>
+                            <Button colorScheme='blue' mr={3} fontSize='md' onClick={handleSubmit}>
+                                {loading && <Spinner size='sm' mr={3} />}
+                                Subscribe
+                            </Button>
+                        </ModalFooter>
+                    </>)}
+
+                    {submitted && (<>
+
+                        <ModalBody>
+                            <Text>
+                                Thanks for subscribing!
+                            </Text>
+                        </ModalBody>
+                        <ModalFooter justifyContent='start'>
+                            <Button colorScheme='blue' mr={3} fontSize='md' onClick={() => setShowModal(false)}>
+                                Close
+                            </Button>
+                        </ModalFooter>
+                    </>)}
                 </ModalContent>
             </Modal> : null}
 
