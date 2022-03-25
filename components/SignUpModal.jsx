@@ -19,9 +19,26 @@ export const SignUpModal = () => {
 
 
     const [showModal, setShowModal] = useState(false);
+
     useEffect(() => {
         setTimeout(() => setShowModal(true), 1000);
     }, []);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        let email = document.getElementById('email').value;
+
+        await fetch('/api/subscribe', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                email
+            })
+        })
+
+    }
 
     return (
         <>
@@ -35,7 +52,6 @@ export const SignUpModal = () => {
                     </ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>
-
                         <FormControl isRequired>
                             <Input id='email' placeholder='e.g. example@example.com' />
                             <FormHelperText ml='1'>We promise its an email worth reading.</FormHelperText>
@@ -43,7 +59,7 @@ export const SignUpModal = () => {
                     </ModalBody>
 
                     <ModalFooter justifyContent='start'>
-                        <Button colorScheme='blue' mr={3} fontSize='md'>
+                        <Button colorScheme='blue' mr={3} fontSize='md' onClick={handleSubmit}>
                             Subscribe
                         </Button>
                     </ModalFooter>
