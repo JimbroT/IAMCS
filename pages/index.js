@@ -4,13 +4,7 @@ import styles from '../styles/Home.module.css'
 import { Landing } from '../components/Landing'
 import { DetailsTable } from '../components/DetailsTable'
 import {
-  Box, SimpleGrid, Heading, Modal, useDisclosure, Button, Container, Avatar, Text
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter, Lorem,
-  ModalBody,
-  ModalCloseButton, Container
+  Box, SimpleGrid, Heading, Avatar, Text, Container
 } from '@chakra-ui/react'
 import { SignUpModal } from '../components/SignUpModal'
 import { NavBar } from '../components/NavBar'
