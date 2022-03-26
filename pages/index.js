@@ -4,19 +4,15 @@ import styles from '../styles/Home.module.css'
 import { Landing } from '../components/Landing'
 import { DetailsTable } from '../components/DetailsTable'
 import {
-  Box, SimpleGrid, Heading, Modal, useDisclosure, Button,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter, Lorem,
-  ModalBody,
-  ModalCloseButton, Container
+  Box, SimpleGrid, Heading, Avatar, Text, Container
 } from '@chakra-ui/react'
 import { SignUpModal } from '../components/SignUpModal'
 import { NavBar } from '../components/NavBar'
 import { TwoColWithPic } from '../components/TwoColWithPic'
 import { MedSep } from '../components/MedSep'
 import { SmSep } from '../components/SmSep'
+import { Footer } from '../components/Footer'
+import Team from '../data/team.json'
 export default function Home() {
   return (
     <>
@@ -39,39 +35,73 @@ export default function Home() {
           <Box pt={16}>
 
             <DetailsTable />
+
+            <SmSep />
+
+            <Box textAlign="center" maxW="900px" mx="auto" id='about'>
+              <Heading as="h1" size="3xl" color="white" fontWeight="bold">About #IAmCS</Heading>
+
+              <Box fontSize="xl" color="white" mt='40px'>
+                <Text>
+                  #IAmCS is a campaign founded by the NC Computer Science Initiative in 2019. It aims to move the needle on equity-focused strategies to strengthen the North Carolina Computer Science landscape for all students. This summit is designed to do just that!. Our annual student-led Computer Science Summit is for all North Carolina students interested or involved in STEM and Computer Science.
+                </Text>
+
+                <Text mt='2'>
+                  The summit is a great opportunity for elementary, middle, and high school students across North Carolina to not only connect with other students interested in these areas but an opportunity for them to be uplifted and inspired to break down barriers that hinder us from pursuing the endless possibilities that lie within STEM and Computer Science. With this in mind, this year’s theme is “Building Blocks: Spark. Innovate. Empower.”
+
+                </Text>
+
+                <Text mt='2'>
+                  Our summit is spearheaded by a phenomenal group of passionate Student Leaders who have an immense passion for STEM, leadership, and youth empowerment. They work hard behind the scenes to prepare for this in-person event and we are elated that the summit will feature student workshop facilitators and speakers all around the topics of STEM and Computer Science.
+
+                </Text>
+
+              </Box>
+            </Box>
+
             <MedSep />
-            <Box textAlign="center" maxW="700px" mx="auto">
+            <Box textAlign="center" maxW="700px" mx="auto" mb={8}>
               <Heading as="h1" size="3xl" color="white" fontWeight="bold" id="workshops">Workshops</Heading>
             </Box >
 
-            <SmSep />
 
             <TwoColWithPic
-              img='/VEX Robot Poster.png'
+              img='/VEX_ Summit Poster.png'
               title='VEX-ing into the Robo World'
-              desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry' s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+              desc="In this workshop students
+              will learn and discuss the
+              real-world implications of
+              robots! By utilizing a VEX
+              IQ robot, students will solve
+              a challenge then code their
+              robot to enact the solution.
+              This workshop is a great
+              opportunity for students to
+              learn code, provide an intro
+              to robots, and help
+              students grow their
+              teamwork skills."
               align='left'
             />
 
-            <SmSep />
+            <SmSep line={true} />
 
             <TwoColWithPic
-              img='/CODE_ School Poster.png'
+              img='/intro-to-web.png'
               title='Finding the Spark in Code: Introduction to Web Development'
               desc="In this workshop, you will be introduced to the basics of web development! Including, understtanding how websites work and how HTML and CSS can be implemented easily. Then participants will desing/create their own website."
               align='right'
             />
-
-            <SmSep />
+            <SmSep line={true} />
 
             <TwoColWithPic
-              img='/VEX Robot Poster.png'
+              img='/SET_ Summit Poster.png'
               title='The Magic of Science and Behind The Scenes'
               desc="Have you ever been curious about the magic behind movie and television sets? Have you ever wondered how the lore behind your favorite science fiction and fantasy shows and movies would be possible in today's world? In The Magic and Science Beyond The Set, we explore the possibilities, intricacies, and science in telivision sets and movies, as well as how through bioengineering, some of our favorite heroes have become the heroes we see on set."
               align='left'
             />
 
-            <SmSep />
+            <SmSep line={true} />
             <TwoColWithPic
               img='/PH_ Summit Poster.png'
               title='Making The Rainbow: Learning About PH'
@@ -79,7 +109,38 @@ export default function Home() {
               align='right'
             />
 
-            <SmSep />
+
+
+            <MedSep />
+
+            <Box textAlign="center" maxW="700px" mx="auto">
+              <Heading as="h1" size="3xl" color="white" fontWeight="bold">Meet the Team</Heading>
+
+
+              <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={20} mt={8}>
+                {Team.map((member) => (
+                  <Box key={member.name}>
+                    <Avatar src={member.pic} alt={member.name} size='3xl' />
+                    <Heading as="h3" size="lg" color="gray.300">{member.name}</Heading>
+
+                    <Text fontSize="lg" color="gray.300">{member.desc}</Text>
+
+                  </Box>
+                ))}
+              </SimpleGrid>
+            </Box>
+
+            <MedSep />
+
+            {/* <Box textAlign="center" maxW="700px" mx="auto">
+              <Heading as="h1" size="3xl" color="white" fontWeight="bold">Sponsors/Partnerships</Heading>
+
+
+
+            </Box> */}
+
+            <Footer />
+
 
 
 
@@ -93,11 +154,5 @@ export default function Home() {
   )
 }
 
-/*
-  landing (including summit details,
-  about iamcs campaign,
-  workshops,
-  meet the team,
-  sponsors,
-  footer (including social media links,)
-*/
+// npdpi, friday institudte
+
