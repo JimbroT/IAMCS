@@ -45,11 +45,11 @@ const MobileNavContent = (props) => {
             <NavList
                 pos="absolute"
                 insetX="0"
-                bg="black"
+                bg="#3B005A"
                 top="64px"
                 animate={isOpen ? 'enter' : 'exit'}
             >
-                <Stack spacing="0" divider={<StackDivider borderColor="black" />}>
+                <Stack spacing="0" divider={<StackDivider borderColor="white" />}>
                     {links.map((link, index) => (
                         <NavListItem key={index} >
                             <NavLink.Mobile href={link.href}>{link.label}</NavLink.Mobile>
@@ -78,7 +78,7 @@ const DesktopNavContent = (props) => {
                 // </NavLink.Desktop>
 
                 // <motion.a key={index} whileHover={{ scale: 1.1  }}>
-                <NavLink.Desktop key={index} href={link.href} fontSize="xl" fontWeight="bold" _hover="">
+                <NavLink.Desktop key={index} href={link.href} fontSize="xl" fontWeight="bold" _hover={{ color: 'gray.500' }}>
                     {link.label}
                 </NavLink.Desktop>
                 // </motion.a>

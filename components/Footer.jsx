@@ -9,19 +9,19 @@ export const Footer = () => {
 
             <Box textAlign='center' fontSize='4xl' mt={4}>
 
-                <Link href='/INSTA' isExternal>
+                <Link href='https://www.instagram.com/iamcsnc/' isExternal>
                     <Icon as={AiOutlineInstagram} color='#ffffff' transition='all 0.2s' _hover={{
                         color: '#ffffff',
                     }} />
                 </Link>
 
-                <Link href='/TWITTER' isExternal>
+                <Link href='https://twitter.com/IAmCSNC_' isExternal>
                     <Icon as={AiOutlineTwitter} color='#ffffff' mx={4} transition='all 0.2s' _hover={{
                         color: '#ffffff',
                     }} />
                 </Link>
 
-                <Link href='/TIKTOK' isExternal>
+                <Link href='https://www.tiktok.com/@iamcsnc' isExternal>
                     <Icon as={IoLogoTiktok} color='#ffffff' transition='all 0.2s' _hover={{
                         color: '#ffffff',
                     }} />

@@ -77,6 +77,7 @@ export function Landing() {
                             _hover={{
                                 bg: '#c9a228',
                             }}
+                            target="_blank"
                         >
                             Register for our 2022 Summit!
                         </Button>
