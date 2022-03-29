@@ -141,7 +141,7 @@ export default function Home() {
                 {Logos.map((logo, index) => (
                   <Box key={index} as='a' target="_blank" href={logo.link}>
                     <Img src={logo.img} alt={logo.name} size='3xl' />
-                    <Text mt={2} fontSize='xl'>{logo.name}</Text>
+                    <Text mt={2} fontSize='xl' color='white'>{logo.name}</Text>
                   </Box>
                 ))}
 
