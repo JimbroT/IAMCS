@@ -18,14 +18,21 @@ const links = [
         label: 'Home',
         href: '/',
     },
-    ,
+    {
+        label: 'About',
+        href: '#about',
+    },
     {
         label: 'Workshops',
         href: '#workshops',
     },
     {
-        label: 'About',
-        href: '#about',
+        label: "Our Team",
+        href: '#team',
+    },
+    {
+        label: 'Partnerships',
+        href: '#partnerships',
     }
 ]
 

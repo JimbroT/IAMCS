@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import { Landing } from '../components/Landing'
 import { DetailsTable } from '../components/DetailsTable'
 import {
-  Box, SimpleGrid, Heading, Avatar, Text, Container
+  Box, SimpleGrid, Heading, Avatar, Text, Container, Img
 } from '@chakra-ui/react'
 import { SignUpModal } from '../components/SignUpModal'
 import { NavBar } from '../components/NavBar'
@@ -13,6 +13,7 @@ import { MedSep } from '../components/MedSep'
 import { SmSep } from '../components/SmSep'
 import { Footer } from '../components/Footer'
 import Team from '../data/team.json'
+import Logos from '../data/logos.json'
 export default function Home() {
   return (
     <>
@@ -113,7 +114,7 @@ export default function Home() {
 
             <MedSep />
 
-            <Box textAlign="center" maxW="700px" mx="auto">
+            <Box textAlign="center" maxW="700px" mx="auto" id='team'>
               <Heading as="h1" size="3xl" color="white" fontWeight="bold">Meet the Team</Heading>
 
 
@@ -132,12 +133,21 @@ export default function Home() {
 
             <MedSep />
 
-            {/* <Box textAlign="center" maxW="700px" mx="auto">
+            <Box textAlign="center" maxW="700px" mx="auto" id='partnerships'>
               <Heading as="h1" size="3xl" color="white" fontWeight="bold">Sponsors/Partnerships</Heading>
 
 
+              <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={20} mt={8}>
+                {Logos.map((logo, index) => (
+                  <Box key={index} as='a' target="_blank" href={logo.link}>
+                    <Img src={logo.img} alt={logo.name} size='3xl' />
+                    <Text mt={2} fontSize='xl'>{logo.name}</Text>
+                  </Box>
+                ))}
 
-            </Box> */}
+              </SimpleGrid>
+
+            </Box>
 
             <Footer />
 
