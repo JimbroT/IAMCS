@@ -14,6 +14,7 @@ import { SmSep } from '../components/SmSep'
 import { Footer } from '../components/Footer'
 import Team from '../data/team.json'
 import Logos from '../data/logos.json'
+
 export default function Home() {
   return (
     <>
@@ -48,7 +49,7 @@ export default function Home() {
                 </Text>
 
                 <Text mt='2'>
-                  The summit is a great opportunity for elementary, middle, and high school students across North Carolina to not only connect with other students interested in these areas but an opportunity for them to be uplifted and inspired to break down barriers that hinder us from pursuing the endless possibilities that lie within STEM and Computer Science. With this in mind, this year’s theme is “Building Blocks: Spark. Innovate. Empower.”
+                  The summit is a great opportunity for elementary, middle, and high school students across North Carolina to not only connect with other students interested in these areas but an opportunity for them to be uplifted and inspired to break down barriers that hinder us from pursuing the endless possibilities that lie within STEM and Computer Science. With this in mind, this year’s theme is “Spark. Innovate. Empower.“
 
                 </Text>
 
@@ -110,6 +111,27 @@ export default function Home() {
               align='right'
             />
 
+            <SmSep line={true} />
+            <TwoColWithPic
+              img='/STEM_ Summit Poster-1.png'
+              title='Exploring the
+              Future of STEM'
+              desc="This workshop is designed to
+              engage and educate students
+              on the vast careers and job
+              outlook in the STEM field
+              while providing resources
+              and information on how
+              students can immerse
+              themselves in experiences
+              that will help gear them
+              towards a STEM career in the
+              future."
+              align='left'
+            />
+
+
+
 
 
             <MedSep />
@@ -121,7 +143,7 @@ export default function Home() {
               <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={20} mt={8}>
                 {Team.map((member) => (
                   <Box key={member.name}>
-                    <Avatar src={member.pic} alt={member.name} size='3xl' />
+                    <Avatar src={member.pic} alt={member.name} height='200px' width='200px' />
                     <Heading as="h3" size="lg" color="gray.300">{member.name}</Heading>
 
                     <Text fontSize="lg" color="gray.300">{member.desc}</Text>
@@ -150,11 +172,6 @@ export default function Home() {
             </Box>
 
             <Footer />
-
-
-
-
-
           </Box>
         </Container>
 

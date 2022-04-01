@@ -68,7 +68,7 @@ export const SignUpModal = () => {
                         </ModalBody>
 
                         <ModalFooter justifyContent='start'>
-                            <Button colorScheme='blue' mr={3} fontSize='md' onClick={handleSubmit}>
+                            <Button bg='#3B005A' mr={3} fontSize='md' color='white' _hover={{ bg: '#28003d' }} onClick={handleSubmit}>
                                 {loading && <Spinner size='sm' mr={3} />}
                                 Subscribe
                             </Button>

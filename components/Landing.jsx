@@ -52,7 +52,7 @@ export function Landing() {
                         color='white'
                         fontSize={{ base: '2xl', sm: '4xl', md: '8xl' }}
                         lineHeight={'110%'}>
-                        #IAm<Text as={'span'} color={'#F1C232'}>CS</Text> Summit’s
+                        <Text as={'span'} color={'#F1C232'}>#IAmCS</Text> Summit’s
 
                     </Heading>
 
