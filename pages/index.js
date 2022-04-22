@@ -10,6 +10,11 @@ import {
   Avatar,
   Text,
   Container,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
   Img,
 } from "@chakra-ui/react";
 import { SignUpModal } from "../components/SignUpModal";
@@ -22,6 +27,7 @@ import Team from "../data/team.json";
 import Partners from "../data/partners.json";
 import Sponsors from "../data/sponsors.json";
 import { BookletTable } from "../components/BookletTable";
+import FAQ from "../data/faq.json";
 export default function Home() {
   return (
     <>
@@ -239,6 +245,38 @@ export default function Home() {
                   </Box>
                 ))}
               </SimpleGrid>
+            </Box>
+
+            <MedSep />
+
+            <Box maxW="700px" mx="auto">
+              <Heading
+                as="h1"
+                size="3xl"
+                color="white"
+                fontWeight="bold"
+                textAlign="center"
+              >
+                FAQ
+              </Heading>
+              <Accordion mt={8} allowMultiple defaultIndex={[0]}>
+                {FAQ.map((faq, index) => (
+                  <AccordionItem key={index} color="white">
+                    <AccordionButton
+                      _expanded={{ bg: "#3B005A", color: "white" }}
+                    >
+                      <Box flex="1" textAlign="left" fontWeight="bold">
+                        {faq.question}
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+
+                    <AccordionPanel pb={4} color="gray.200">
+                      {faq.answer}
+                    </AccordionPanel>
+                  </AccordionItem>
+                ))}
+              </Accordion>
             </Box>
 
             <Footer />
