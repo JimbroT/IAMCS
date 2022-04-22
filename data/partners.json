@@ -1,0 +1,22 @@
+[
+  {
+    "img": "/mites.png",
+    "link": "",
+    "name": "MITES"
+  },
+  {
+    "img": "/inspire.png",
+    "link": "https://inspirenc.us/",
+    "name": "Inspire NC"
+  },
+  {
+    "img": "/Steam Quest Logo.png",
+    "link": "https://www.firstnorthcarolina.org/",
+    "name": "Steam Quest"
+  },
+  {
+    "img": "/5518.png",
+    "link": "http://www.technowolves.org/Home/",
+    "name": "Techno Wolves"
+  }
+]

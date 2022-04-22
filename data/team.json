@@ -1,107 +1,107 @@
 [
-    {
-        "name": "Sheneka Brightwell",
-        "pic": "/brightwell.jpg",
-        "desc": "NC DPI Computer Science Dep."
-    },
-    {
-        "name": "Johna Speller",
-        "pic": "/Johna S. (A).PNG",
-        "desc": "Executive Director"
-    },
-    {
-        "name": "Ahmya Rivera",
-        "pic": "/Ahmya R. (A) (1).jpeg",
-        "desc": "Executive Director"
-    },
-    {
-        "name": "Kyle Dunn",
-        "pic": "/Kyle D. (A).jpg",
-        "desc": "Student Leader"
-    },
-    {
-        "name": "Ganning Xu",
-        "pic": "/ganning.jpeg",
-        "desc": "Website Developer"
-    },
-    {
-        "name": "Roxanne Egamino",
-        "pic": "/Roxanne E. (A).jpg",
-        "desc": "Student Leader"
-    },
-    {
-        "name": "Laura Plata",
-        "pic": "/Laura P. (A).jpg",
-        "desc": "Student Leader"
-    },
-    {
-        "name": "Leyla Urmanova",
-        "pic": "/Leyla U. (A).jpg",
-        "desc": "Student Leader"
-    },
-    {
-        "name": "Rhea Kothur",
-        "pic": "/Rhea K. (A).jpg",
-        "desc": "Student Leader"
-    },
-    {
-        "name": "Shanyu Gowdu",
-        "pic": "/Shanyu G. (A).png",
-        "desc": "Student Leader"
-    },
-    {
-        "name": "Samriddhi Dubey",
-        "pic": "/Samriddhi D. (A).jpg",
-        "desc": "Student Leader"
-    },
-    {
-        "name": "David McCrudden",
-        "pic": "/David M. (A).jpeg",
-        "desc": "Student Leader"
-    },
-    {
-        "name": "Jimmy Troung",
-        "pic": "/Jimmy T. (A).JPG",
-        "desc": "Student Leader"
-    },
-    {
-        "name": "Talea Rivera",
-        "pic": "/Talea R..PNG",
-        "desc": "Student Leader"
-    },
-    {
-        "name": "Kelly Kim",
-        "pic": "/Kelly K. (A).jpg",
-        "desc": "Student Leader"
-    },
-    {
-        "name": "Whitley Ryles",
-        "pic": "/Whitley R. (A).jpg",
-        "desc": "Student Leader"
-    },
-    {
-        "name": "Sahasra Nandela",
-        "pic": "/Sahasra N. (A).jpg",
-        "desc": "Student Leader"
-    },
-    {
-        "name": "Puneetha Mallarapu",
-        "pic": "/Puneetha M. (A).png",
-        "desc": "Student Leader"
-    },
-    {
-        "name": "Siani-Simone Ammons",
-        "pic": "/Siani-simone A..jpg",
-        "desc": "Student Leader"
-    },
-    {
-        "name": "Gabrielle Hoskins",
-        "pic": "/Gabrielle H. (A).png",
-        "desc": "Student Leader"
-    },
-    {
-        "name": "Saumya Rai",
-        "pic": "/Saumya R. (A).jpg",
-        "desc": "Student Leader"
-    }
+  {
+    "name": "Sheneka Brightwell",
+    "pic": "/brightwell.jpg",
+    "desc": "Chief CS & Tech Ed Consultant "
+  },
+  {
+    "name": "Johna Speller",
+    "pic": "/Johna S. (A).PNG",
+    "desc": "Executive Director"
+  },
+  {
+    "name": "Ahmya Rivera",
+    "pic": "/Ahmya R. (A) (1).jpeg",
+    "desc": "Executive Director & Design Director"
+  },
+  {
+    "name": "Kyle Dunn",
+    "pic": "/Kyle D. (A).jpg",
+    "desc": "Director of Workshops"
+  },
+  {
+    "name": "Ganning Xu",
+    "pic": "/ganning.jpeg",
+    "desc": "Website Developer"
+  },
+  {
+    "name": "Roxanne Egamino",
+    "pic": "/Roxanne E. (A).jpg",
+    "desc": "Student Leader"
+  },
+  {
+    "name": "Laura Plata",
+    "pic": "/Laura P. (A).jpg",
+    "desc": "Student Leader"
+  },
+  {
+    "name": "Leyla Urmanova",
+    "pic": "/Leyla U. (A).jpg",
+    "desc": "Director of Outreach"
+  },
+  {
+    "name": "Rhea Kothur",
+    "pic": "/Rhea K. (A).jpg",
+    "desc": "Student Leader"
+  },
+  {
+    "name": "Shanyu Gowdu",
+    "pic": "/Shanyu G. (A).png",
+    "desc": "Student Leader"
+  },
+  {
+    "name": "Samriddhi Dubey",
+    "pic": "/Samriddhi D. (A).jpg",
+    "desc": "Student Leader"
+  },
+  {
+    "name": "David McCrudden",
+    "pic": "/David M. (A).jpeg",
+    "desc": "Student Leader"
+  },
+  {
+    "name": "Jimmy Troung",
+    "pic": "/Jimmy T. (A).JPG",
+    "desc": "Student Leader"
+  },
+  {
+    "name": "Talea Rivera",
+    "pic": "/Talea R..PNG",
+    "desc": "Student Leader"
+  },
+  {
+    "name": "Kelly Kim",
+    "pic": "/Kelly K. (A).jpg",
+    "desc": "Student Leader"
+  },
+  {
+    "name": "Whitley Ryles",
+    "pic": "/Whitley R. (A).jpg",
+    "desc": "Co-Director of Marketing"
+  },
+  {
+    "name": "Sahasra Nandela",
+    "pic": "/Sahasra N. (A).jpg",
+    "desc": "Director of Tech"
+  },
+  {
+    "name": "Puneetha Mallarapu",
+    "pic": "/Puneetha M. (A).png",
+    "desc": "Co-Director of Marketing"
+  },
+  {
+    "name": "Siani-Simone Ammons",
+    "pic": "/Siani-simone A..jpg",
+    "desc": "Student Leader"
+  },
+  {
+    "name": "Gabrielle Hoskins",
+    "pic": "/Gabrielle H. (A).png",
+    "desc": "Student Leader"
+  },
+  {
+    "name": "Saumya Rai",
+    "pic": "/Saumya R. (A).jpg",
+    "desc": "Student Leader"
+  }
 ]
