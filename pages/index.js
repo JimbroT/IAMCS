@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import { Landing } from "../components/Landing";
 import { DetailsTable } from "../components/DetailsTable";
 import {
@@ -249,7 +247,7 @@ export default function Home() {
 
             <MedSep />
 
-            <Box maxW="700px" mx="auto">
+            <Box maxW="700px" mx="auto" id="faq">
               <Heading
                 as="h1"
                 size="3xl"

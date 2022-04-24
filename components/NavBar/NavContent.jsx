@@ -38,6 +38,10 @@ const links = [
     label: "Sponsors",
     href: "#sponsors",
   },
+  {
+    label: "FAQ",
+    href: "#faq",
+  },
 ];
 
 const MobileNavContent = (props) => {
