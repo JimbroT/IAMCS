@@ -1,7 +1,7 @@
 [
   {
     "img": "/mites.png",
-    "link": "",
+    "link": "/",
     "name": "MITES"
   },
   {
@@ -11,12 +11,17 @@
   },
   {
     "img": "/Steam Quest Logo.png",
-    "link": "https://www.firstnorthcarolina.org/",
+    "link": "/",
     "name": "Steam Quest"
   },
   {
     "img": "/5518.png",
     "link": "http://www.technowolves.org/Home/",
     "name": "Techno Wolves"
+  },
+  {
+    "img": "/skill_struck.png",
+    "link": "/",
+    "name": "Skill Struck"
   }
 ]
