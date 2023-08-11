@@ -1,18 +1,27 @@
 [
   {
-    "img": "/Friday Institute Logo.png",
-    "link": "https://www.fi.ncsu.edu/",
-    "name": "Friday Institute"
+    "img": "/toronto.jpg",
+    "name": "City of Toronto"
   },
   {
-    "img": "/NC DPI Logo.png",
-    "link": "https://www.dpi.nc.gov/",
-    "name": "NC DPI"
+    "img": "/markham.jpg",
+    "name": "City of Markham"
   },
 
   {
-    "img": "/FirstNC Logo.png",
-    "link": "https://www.firstnorthcarolina.org/",
-    "name": "FIRST NC"
+    "img": "/mississauga.jpg",
+    "name": "City of Mississauga"
+  },
+  {
+    "img": "/oppi.jpg",
+    "name": "Ontario Professional Planners Institute"
+  },
+  {
+    "img": "/oaa.jpg",
+    "name": "Ontario Association of Architects"
+  },
+  {
+    "img": "/futurecities.jpg",
+    "name": "Future Cities Canada"
   }
 ]
