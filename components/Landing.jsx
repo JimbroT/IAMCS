@@ -12,10 +12,10 @@ import {
 export function Landing() {
   return (
     <Box
-      backgroundImage="url('/landing_bkg.png')"
+      backgroundImage="url('/bkg.png')"
       bgSize="cover"
       bgPos="center"
-      bgImage="linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(23, 0, 35)), url('/landing_bkg.png') "
+      bgImage="linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(23, 0, 35)), url('/bkg.png') "
       bgRepeat="no-repeat"
       h="80vh"
     >
@@ -34,7 +34,7 @@ export function Landing() {
               w={71}
               transform={"rotate(240deg)"}
               position={"absolute"}
-              right={420}
+              right={400}
               top={140}
             />
             <Text
@@ -47,7 +47,7 @@ export function Landing() {
               top={110}
               transform={"rotate(0deg)"}
             >
-              Computer Science
+              For youth, by youth
             </Text>
           </Box>
           <Heading
@@ -56,20 +56,19 @@ export function Landing() {
             fontSize={{ base: "2xl", sm: "4xl", md: "8xl" }}
             lineHeight={"110%"}
           >
-            #IAm
+            Our
             <Text as={"span"} color={"#F1C232"}>
-              CS
+              City
             </Text>{" "}
-            Summit’s
           </Heading>
 
           <Text color={"white"} fontWeight="bold">
-            #IAmComputerScience (#IAmCS) summits are an NC-wide effort run by
-            student volunteers and the North Carolina Department of Public
-            Instructions Technology and Computer Science Department to promote
-            the #IAmCS campaign. Parents and educators, sign up for our 2022
-            summit below!
+          Creating Places. Engaging Minds.
           </Text>
+          <Text color={"white"} fontWeight = "semibold">
+          We are creating meaningful ways for youth to shape equitable and sustainable cities.
+          </Text>
+          
 
           <Stack
             direction={"row"}
@@ -81,7 +80,7 @@ export function Landing() {
             <Button
               color="#494949"
               as="a"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSezCVsq1iYvqzS5GD7iGD_sRTmNb33kg2TJWmT1QnasSQUXTw/viewform"
+              href="https://forms.gle/ukcG7V5y4ovW4uey7"
               bg={"#F1C232"}
               rounded={"full"}
               px={6}
@@ -90,23 +89,9 @@ export function Landing() {
               }}
               target="_blank"
             >
-              Registration for educators
+              Youth led city building
             </Button>
 
-            <Button
-              color="#494949"
-              as="a"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfur45aXKYR5ubchmDXInsXr9eTPwyl9z06mndVwSOoNlVE5w/formResponse"
-              bg={"#F1C232"}
-              rounded={"full"}
-              px={6}
-              _hover={{
-                bg: "#c9a228",
-              }}
-              target="_blank"
-            >
-              Registration for students
-            </Button>
           </Stack>
         </Stack>
       </Container>
