@@ -1,120 +1,71 @@
 import {
-  Table,
-  Thead,
-  Tbody,
-  Tfoot,
-  Tr,
-  Th,
-  Td,
-  TableCaption,
   Box,
   SimpleGrid,
   Heading,
   Text,
   Img,
-  Container,
+  Button,
 } from "@chakra-ui/react";
 
 export const DetailsTable = () => {
   return (
-    <SimpleGrid
-      columns={{ base: 1, lg: 2 }}
-      spacing={4}
+    <Box
+      display="flex"
+      flexDirection="column"
       alignItems="center"
       justifyContent="center"
+      textAlign="center"
+      backgroundImage="url('/peopletalking.jpg')"
+      backgroundSize="cover"
+      backgroundPosition="center"
+      minHeight="100vh"
     >
-      <Box>
-        <Heading color="white" fontSize="5xl">
-          <Text as="span" color="#F1C232">
-            2022
-          </Text>{" "}
-          Summit Details:
-        </Heading>
-        <Table variant="unstyled" mt="4">
-          <Tbody p={0} m={0}>
-            <Tr alignItems="center">
-              <Td p={0}>
-                <Text color="#F1C232" fontSize="3xl" fontWeight="bold">
-                  Where:
-                </Text>
-              </Td>
-              <Td lineHeight="6">
-                <Text
-                  as="span"
-                  color="white"
-                  fontSize="2xl"
-                  fontWeight="normal"
-                >
-                  The Friday Institute for Educational Innovation{" "}
-                </Text>
-                <Text color="gray.300" fontSize="lg">
-                  1890 Main Campus Dr, Raleigh, NC 27606
-                </Text>
-              </Td>
-            </Tr>
-            <Tr alignItems="center">
-              <Td p={0}>
-                <Text color="#F1C232" fontSize="3xl" fontWeight="semibold">
-                  When:
-                </Text>
-              </Td>
-              <Td lineHeight="6">
-                <Text
-                  as="span"
-                  color="white"
-                  fontSize="2xl"
-                  fontWeight="normal"
-                >
-                  {" "}
-                  <Text
-                    as="span"
-                    color="white"
-                    fontSize="2xl"
-                    fontWeight="normal"
-                  >
-                    Saturday, April 30th 2022{" "}
-                  </Text>
-                </Text>
-                <Text color="gray.300" fontSize="lg">
-                  10am - 5:30pm
-                </Text>
-              </Td>
-            </Tr>
+    
 
-            <Tr alignItems="center">
-              <Td p={0}>
-                <Text color="#F1C232" fontSize="3xl" fontWeight="semibold">
-                  About:
-                </Text>
-              </Td>
-              <Td lineHeight="6">
-                <Text
-                  as="span"
-                  color="white"
-                  fontSize="2xl"
-                  fontWeight="normal"
-                >
-                  This event is aimed at exposing students, with a focus on
-                  girls, to computer science, AI, STEM, and robotics.
-                  <Text
-                    as="span"
-                    color="green.100"
-                    fontStyle="italic"
-                    fontWeight="bold"
-                  >
-                    {" "}
-                    Due to this, participants must be in grades 5th to 12th.
-                  </Text>
-                </Text>
-              </Td>
-            </Tr>
-          </Tbody>
-        </Table>
-      </Box>
+      <Heading color="white" fontSize="5xl" mt = "-80" ml = "-8">
+        <Text as="span" color="#F1C232">
+          What We Do
+        </Text>
+      </Heading>
 
-      <Box>
-        <Img src="/sie.png" mx="auto" maxH="600px" />
-      </Box>
-    </SimpleGrid>
+
+      <SimpleGrid
+        columns={{ base: 1, md: 3 }}
+        spacing={40} 
+        mt="8"
+        maxW="1200px"
+        mx="auto"
+      >
+        <Box mt = "10">
+          <Img src="/image1.png" alt="Image 1" />
+          <Text color="white" mt="12" fontWeight = "bold" textAlign="left">
+            Consulting
+          </Text>
+          <Button colorScheme="blue" mt="12" ml = "-5">
+            Learn More
+          </Button>
+        </Box>
+
+        <Box mt = "10">
+          <Img src="/idea2.png" alt="Image 2" />
+          <Text color="white" mt="12" fontWeight = "bold" textAlign="left">
+            Workshops
+          </Text>
+          <Button colorScheme="blue" mt="12" ml = "-5">
+            Learn More
+          </Button>
+        </Box>
+
+        <Box mt = "10" textAlign="center">
+          <Img src="/idea3.png" alt="Image 3" />
+          <Text color="white" mt="12" fontWeight = "bold" textAlign="left" ml = "-4">
+            OurCity Program
+          </Text>
+          <Button colorScheme="blue" mt="12" ml = "-5">
+            Learn More
+          </Button>
+        </Box>
+      </SimpleGrid>
+    </Box>
   );
 };
