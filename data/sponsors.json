@@ -1,18 +1,5 @@
 [
   {
-    "img": "/toronto.jpg",
-    "name": "City of Toronto"
-  },
-  {
-    "img": "/markham.jpg",
-    "name": "City of Markham"
-  },
-
-  {
-    "img": "/mississauga.jpg",
-    "name": "City of Mississauga"
-  },
-  {
     "img": "/oppi.jpg",
     "name": "Ontario Professional Planners Institute"
   },
