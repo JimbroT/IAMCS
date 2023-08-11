@@ -12,8 +12,6 @@ import {
   createIcon,
 } from "@chakra-ui/react";
 
-//on develop branch
-
 export function Landing({ children, noAnim }) {
   return (
     <Box
