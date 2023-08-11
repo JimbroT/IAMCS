@@ -9,20 +9,17 @@ export const BookletTable = () => {
       justifyContent="center"
     >
       <Box>
-        <Img src="/booklet.png" mx="auto" maxH="400px" rounded="md" />
+        <Img src="/toolkitpic.png" mx="auto" maxH="400px" rounded="md" />
       </Box>
 
       <Box>
         <Heading color="white" fontSize="5xl">
           <Text as="span" color="#F1C232">
-            Booklet
+            Our Toolkit For Youth Engagement Planning:
           </Text>{" "}
-          Details:
         </Heading>
         <Text color="white" fontSize="2xl" fontWeight="normal" my={4}>
-          Our team created a booklet specialized for the 2022 #IAmCS Summit.
-          Feel free to grab your copy at the Summit (or now!) and share it with
-          your friends!
+        A helpful resource for planners and community engagement professionals looking to better connect with the new generation and deliver more youth-friendly outcomes
         </Text>
 
         <Button
@@ -37,7 +34,7 @@ export const BookletTable = () => {
           }}
           target="_blank"
         >
-          Grab a copy here!
+          Learn more
         </Button>
       </Box>
     </SimpleGrid>
