@@ -1,9 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
-import { useState } from "react";
-import { useRouter } from "next/router";
-import { GoThreeBars } from "react-icons/go"
-
 import {
   Box,
   Center,
@@ -21,46 +15,32 @@ import { motion } from "framer-motion";
 
 const links = [
   {
-      name: "Home",
-      link: "/", 
-      id: "home",
-      priority: false
+    label: "Cities For Youth",
+    href: "/",
   },
   {
-      name: "Our Partners",
-      link: "/partners",
-      id: "partners",
-      priority: false
+    label: "Our Partners",
+    href: "#about",
   },
   {
-      name: "Workshops",
-      link: "/workshops",
-      id: "workshops",
-      priority: false
+    label: "Workshops",
+    href: "#workshops",
   },
   {
-      name: "About",
-      link: "/about",
-      id: "about",
-      priority: false
+    label: "About",
+    href: "#team",
   },
   {
-      name: "Blog",
-      link: "/blog",
-      id: "blog",
-      priority: false
+    label: "Blog",
+    href: "#partnerships",
   },
   {
-      name: "Our Team",
-      link: "/team",
-      id: "team",
-      priority: false
+    label: "Our Team",
+    href: "#sponsors",
   },
   {
-      name: "FAQ",
-      link: "/faq",
-      id: "faq",
-      priority: false
+    label: "FAQ",
+    href: "#faq",
   },
 ];
 
@@ -112,62 +92,6 @@ const DesktopNavContent = (props) => {
     </HStack>
   );
 };
-
-export default function Header() {
-  const [showDropdown, setShowDropdown] = useState(false);
-  const router = useRouter();
-
-  const currentRoute = router.route;
-
-  return (
-      <header className="bg-white py-2 sticky">
-          <div className="container px-4 mx-auto lg:flex lg:items-center">
-              <div className="flex justify-between items-center">
-                  <Link href="/">
-                      <a className="p-4">
-                          <Image src={Logo} alt="logo" width={70} height={25} />
-                      </a>
-                  </Link>
-
-                  <button
-                      className="px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 lg:hidden"
-                      aria-label="Menu"
-                      data-test-id="navbar-menu"
-                      onClick={
-                          () => {
-                              setShowDropdown(!showDropdown);
-                          }}
-                  >
-                      <GoThreeBars />
-                  </button>
-              </div>
-
-              <div className={`${showDropdown ? "flex" : "hidden"} lg:flex flex-col lg:flex-row lg:ml-auto mt-3 lg:mt-0`} data-test-id="navbar">
-                  {
-                      links.map(({ name, link, id }) =>
-                          <Link key={name} href={link}>
-                              <a
-                                  className={`${link == currentRoute ? "text-blue-400" : "text-black hover:text-blue-400"} p-2 lg:px-4 lg:mx-2 rounded duration-150 transition-colors `}
-                                  data-test-id={`navbar-${id}`}
-                              >
-                                  {name}
-                              </a>
-                          </Link>
-                      )
-                  }
-              </div>
-
-              <div className={`${showDropdown ? "flex" : "hidden"} lg:flex flex-row lg:ml-auto mt-3 lg:mt-0 items-center justify-center self-center justify-self-center gap-4`} data-test-id="navbar">
-                  {socialMedias.map(({ name, icon, link }) => (
-                      <a key={name} href={link}>
-                          <Image src={icon} width={30} height={30} alt={name} />
-                      </a>
-                  ))}
-              </div>
-          </div>
-      </header>
-  )
-}
 
 export const NavContent = {
   Mobile: MobileNavContent,
