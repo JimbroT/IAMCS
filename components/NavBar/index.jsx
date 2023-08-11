@@ -15,7 +15,6 @@ export const NavBar = ({ bg }) => (
     <Box as="header" height="16" position="relative" color="white">
       <Box
         height="100%"
-        // mx="auto"
         px={{
           base: "8",
           md: "8",
@@ -48,7 +47,7 @@ export const NavBar = ({ bg }) => (
                 maxW="48rem"
                 display="inline"
               >
-                #IAmCS
+                OurCity
               </Text>
             </Box>
           </motion.a>
