@@ -55,7 +55,7 @@ export const SignUpModal = () => {
                 <ModalContent>
                     <ModalHeader>
                         <Text fontWeight='black'>
-                            Subscribe to the <chakra.span color='#F1C232'>#IAmCS</chakra.span> newsletter!
+                            Subscribe to the <chakra.span color='#F1C232'>OurCity</chakra.span> newsletter!
                         </Text>
                     </ModalHeader>
                     <ModalCloseButton />
