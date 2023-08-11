@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import Head from "next/head";
+
 import {
   Box,
   Heading,
@@ -9,7 +12,9 @@ import {
   createIcon,
 } from "@chakra-ui/react";
 
-export function Landing() {
+//on develop branch
+
+export function Landing({ children, noAnim }) {
   return (
     <Box
       backgroundImage="url('/bkg.png')"
@@ -96,6 +101,7 @@ export function Landing() {
         </Stack>
       </Container>
     </Box>
+
   );
 }
 
