@@ -7,7 +7,7 @@ import {
 
 import { IoLogoTiktok } from "react-icons/io5";
 export const Footer = () => {
-  return (//lol
+  return (
     <>
       <Divider mt={20} borderColor="gray.100" />
 

@@ -1,3 +1,9 @@
+import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
+import { useRouter } from "next/router";
+import { GoThreeBars } from "react-icons/go"
+
 import {
   Box,
   Center,
@@ -15,32 +21,46 @@ import { motion } from "framer-motion";
 
 const links = [
   {
-    label: "Cities For Youth",
-    href: "/",
+      name: "Home",
+      link: "/", 
+      id: "home",
+      priority: false
   },
   {
-    label: "Our Partners",
-    href: "#about",
+      name: "Our Partners",
+      link: "/partners",
+      id: "partners",
+      priority: false
   },
   {
-    label: "Workshops",
-    href: "#workshops",
+      name: "Workshops",
+      link: "/workshops",
+      id: "workshops",
+      priority: false
   },
   {
-    label: "About",
-    href: "#team",
+      name: "About",
+      link: "/about",
+      id: "about",
+      priority: false
   },
   {
-    label: "Blog",
-    href: "#partnerships",
+      name: "Blog",
+      link: "/blog",
+      id: "blog",
+      priority: false
   },
   {
-    label: "Our Team",
-    href: "#sponsors",
+      name: "Our Team",
+      link: "/team",
+      id: "team",
+      priority: false
   },
   {
-    label: "FAQ",
-    href: "#faq",
+      name: "FAQ",
+      link: "/faq",
+      id: "faq",
+      priority: false
   },
 ];
 
