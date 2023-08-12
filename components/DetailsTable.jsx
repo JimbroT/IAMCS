@@ -20,6 +20,7 @@ export const DetailsTable = () => {
       backgroundPosition="center"
       minHeight="100vh"
     >
+    
 
       <Heading color="white" fontSize="5xl" mt = "-80" ml = "-8">
         <Text as="span" color="#F1C232">
