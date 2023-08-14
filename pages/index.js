@@ -57,7 +57,7 @@ export default function Home() {
 
             <SmSep />
 
-            <Box textAlign="center" maxW="900px" mx="auto" id="about">
+            <Box textAlign="center" maxW="900px" mx="auto" id="about" mt = "100px">
               <Heading as="h1" size="3xl" color="white" fontWeight="bold">
                 About{" "}
                 <Text as="span" color="#F1C232">
@@ -74,17 +74,19 @@ export default function Home() {
 
                 </Text>
 
+                < div class = "centered-list">
                 <Text mt="8">
                 Cities For Youth is a toolkit for youth engagement in planning. Drawing from the experience of urban 
                 planning professionals across the world, the toolkit includes:
                 <Text mt = "4">
-                <ul className ="guideTools">
+                <ul className="guideTools" style={{ listStyleType: 'disc', listStylePosition: 'inside', marginLeft: '40px'}}>
                 <li>Guiding principles</li>
                 <li>Case Studies</li>
                 <li>Best Practises</li>
                 </ul>
                 </Text>
                 </Text>
+                </div>
 
                 <Text mt="8">
                 From outreach to ideation to feedback and follow-up,
@@ -96,7 +98,7 @@ export default function Home() {
             </Box>
 
             <MedSep />
-            <Box textAlign="center" maxW="700px" mx="auto" mb={8}>
+            <Box textAlign="center" maxW="700px" mx="auto" mb={10}>
               <Heading
                 as="h1"
                 size="3xl"
@@ -113,7 +115,7 @@ export default function Home() {
               title="City Builders Workshop"
               desc="City Builders is an introductory Urban Planning x Design Thinking workshop that is fun and hands-on. We will work with you to customize the workshop to the students' needs and level of learning, and to support any course curriculum requirements or objectives.
               Youth will learn through self-guided exploration, and take ownership in creating and sharing ideas. Activities include urbam planning brainstorming, mapping exercises, as well as prototyping and idea pitching."
-              align="left"
+              align="left" 
             />
 
             <SmSep line={true} />
@@ -129,7 +131,7 @@ export default function Home() {
 
             <MedSep />
 
-            <Box textAlign="center" maxW="700px" mx="auto" id="team">
+            <Box textAlign="center" maxW="700px" maxH = "350px" mx="auto" id="team">
               <Heading as="h1" size="3xl" color="white" fontWeight="bold">
                 Meet the Team
               </Heading>
@@ -137,7 +139,7 @@ export default function Home() {
               <SimpleGrid
                 columns={{ base: 1, md: 2, lg: 3 }}
                 spacing={20}
-                mt={8}
+                mt={12}
               >
                 {Team.map((member) => (
                   <Box key={member.name}>
@@ -161,7 +163,7 @@ export default function Home() {
 
             <MedSep />
 
-            <Box textAlign="center" maxW="700px" mx="auto" id="sponsors">
+            <Box textAlign="center" maxW="700px" maxH = "150px" mx="auto" id="sponsors">
               <Heading as="h1" size="3xl" color="white" fontWeight="bold">
                 Sponsors
               </Heading>
@@ -223,4 +225,3 @@ export default function Home() {
     </>
   );
 }
-
