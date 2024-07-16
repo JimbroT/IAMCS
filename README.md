@@ -1,4 +1,4 @@
-# IAmCS Website
+# [IAmCS Website](https://iamcs-website.vercel.app/)
 
 <img width="1860" alt="Screen Shot 2022-02-22 at 7 41 02 PM" src="https://user-images.githubusercontent.com/62436772/155243942-25c38935-9c70-4b1f-95d3-e57d27f9287a.png">
 
